@@ -5390,3 +5390,109 @@ button:focus-visible {
 }
 
 /* PRINT NORMALIZATION V1 END */
+
+/* SLIDE 03 REFINEMENT V1 START
+   User-requested Slide 03 desktop refinement.
+   ---------------------------------------------------------- */
+
+@media screen and (min-width: 701px) {
+
+  .plant-bioreactor-evidence {
+    grid-template-columns:
+      minmax(320px, 0.40fr)
+      minmax(520px, 0.60fr);
+
+    gap: 24px;
+    align-items: stretch;
+  }
+
+  /* Left side = biological system + engineering support */
+  .bio-vessel-distinction {
+    order: 1;
+
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .plant-bioreactor-evidence .definition-card {
+    padding: 12px 14px;
+    border-radius: 16px;
+  }
+
+  .plant-bioreactor-evidence .definition-card__icon {
+    margin-bottom: 4px;
+  }
+
+  .plant-bioreactor-evidence .definition-card__icon svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .plant-bioreactor-evidence .definition-card h3 {
+    font-size: clamp(1.02rem, 1.15vw, 1.22rem);
+    line-height: 1.18;
+  }
+
+  .plant-bioreactor-evidence .definition-card ul {
+    margin-top: 6px;
+    font-size: 0.92rem;
+    line-height: 1.34;
+  }
+
+  .bio-vessel-relation {
+    min-height: 24px;
+    font-size: 0.72rem;
+    line-height: 1.2;
+  }
+
+  .bio-vessel-relation strong {
+    margin-top: 0;
+    font-size: 0.96rem;
+  }
+
+  /* Right side = bigger figure */
+  .plant-bioreactor-figure {
+    order: 2;
+    min-height: 100%;
+  }
+
+  .plant-bioreactor-figure img {
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  .plant-bioreactor-figure figcaption {
+    padding: 8px 11px;
+    font-size: 0.82rem;
+    line-height: 1.33;
+  }
+
+  /* Smaller bottom single-line lesson strip */
+  .core-definition--visual {
+    margin-top: 8px;
+    padding-top: 8px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .core-definition--visual span {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .core-definition--visual strong {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.28;
+  }
+}
+
+/* SLIDE 03 REFINEMENT V1 END */
